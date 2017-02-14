@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  position: relative; }
+
+html {
+  font-size: 100%; }
+
+body {
+  background: #eee;
+  font-size: 10px; }
+
+.heart {
+  animation: 1s pulse infinite;
+  margin: auto;
+  position: relative;
+  width: 30vmax; }
+
+.heart:before,
+.heart:after {
+  background: #ee565a;
+  border-radius: 15vmax 15vmax 3vmax 3vmax;
+  content: "";
+  left: 15vmax;
+  height: 24vmax;
+  position: absolute;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  width: 15vmax; }
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%; }
+
+.face {
+  background: #222;
+  border-radius: 0 0 7.5vmax 7.5vmax;
+  border-top: 1.5vmax solid #fff;
+  display: block;
+  height: 4.5vmax;
+  left: 10.5vmax;
+  position: absolute;
+  top: 12vmax;
+  width: 9vmax;
+  z-index: 5; }
+
+.face:before, .face:after {
+  background: #222;
+  border-radius: 3vmax;
+  box-shadow: 0 3vmax 0 -0.9vmax #e04e50;
+  content: '';
+  display: block;
+  height: 3vmax;
+  position: absolute;
+  bottom: 6vmax;
+  width: 3vmax;
+  z-index: 5; }
+
+.face:before {
+  left: -3vmax; }
+
+.face:after {
+  right: -3vmax; }
+
+h1 {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15vmax;
+  font: 700 2.25vmax "Amatic SC";
+  margin: 7.5vmax auto 3vmax;
+  padding: 1vw;
+  text-align: center;
+  width: 37.5vmax;
+  z-index: 5; }
+
+h1:after {
+  border: 1vw solid transparent;
+  border-color: transparent #fff #fff transparent;
+  box-shadow: 0.075vmax 0.075vmax #ddd;
+  content: '';
+  display: block;
+  left: 4.5vmax;
+  position: absolute;
+  transform: rotate(45deg); }
+
+@keyframes pulse {
+  80% {
+    transform: scale(0.9); } }
+
+/*# sourceMappingURL=style.css.map */
