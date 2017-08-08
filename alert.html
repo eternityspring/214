@@ -8,12 +8,16 @@
     <title>我问你答好不啦</title>
 </head>
 <body>
+<button onclick="go()"></button>
 <script>
-    if(confirm('你好！')){
-      alert('吧啦吧啦你好！');
-    }else{
-      alert('喂一点也不友好！')
+    function go(){
+      if(confirm('你好！')){
+        alert('吧啦吧啦你好！');
+      }else{
+        alert('喂一点也不友好！')
+      }
     }
+    go()
 </script>
 </body>
 </html>
