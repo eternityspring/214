@@ -11,7 +11,8 @@
 <button onclick="go()">再来一遍</button>
 <script>
     function go(){
-      if(confirm('你好！')){
+      var name = prompt('怎么称呼？');
+      if(confirm(name+'你好！')){
         alert('吧啦吧啦你好！');
       }else{
         alert('喂一点也不友好！')
